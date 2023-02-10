@@ -1,0 +1,265 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-purple: #8631be;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+   /*  --d:rgba(233, 220, 220, 0.322); */
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+}
+ 
+@media (max-width: 750px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+  @media (max-width: 300px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+    background-color: var(--main-gray);
+    text-align:center;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    margin:3em auto;
+    justify-content: center;
+    align-items: center;   
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#header-img {
+  width: 2%;
+  position:relative;
+}
+   
+.nav{
+    box-shadow: 0 2px 0 rgb(14, 2, 32);
+   
+    background-color:#303841
+}
+/* NAVBAR */
+.navbar {
+    display: block;
+    width: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    height:5vh;
+  /*   box-shadow: 0 2px 0 rgb(14, 2, 32);
+    box-decoration-break: var(--main-white); */
+    z-index:100;
+}
+
+.menu-list {
+    display:flex;
+    margin-right: 2rem;   
+    justify-content: flex-end;
+}
+
+.menu-list > li {
+    margin:auto 1rem;    
+}
+
+.menu-list a {
+    flex: 1; 
+    color: #fff; 
+    margin: 0.5rem auto;
+    padding: 0.3rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+}
+  
+ 
+@media (max-width: 28.75em) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .menu-list {
+    margin:auto 1rem;
+  }
+}
+
+/* /END NAVBAR   */
+
+/* Features Section */
+.box {
+    display:inline-flex;   
+    gap:1rem;
+    width:1000px;
+    position: relative;
+    top:100px;
+    padding: 1.5em 1em;     
+}
+/*  /END Features Section */
+
+  .about-me {
+    display: flex;
+    flex-direction: column; 
+    width:100%;
+    /* padding-top:1em; */
+  }
+  
+  .about-box {
+    display: block;   
+    max-width: 70%;
+    margin:0;
+    
+  }
+
+  #logo-img {
+    width: 10%;
+    position:sticky;
+   
+  }
+
+.about-heading {
+    display: block;   
+}
+
+  .price-section {
+    display: block;
+    width:80%;
+    
+  }
+
+  .product-box {
+    display: flex;
+    justify-content: space-between;
+    margin:2rem 0;
+  }
+
+  .price-box {
+    flex: 1;
+    background: rgb(206, 23, 23);
+    color: rgb(248, 246, 246);
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+  }
+  
+  .price-box h2 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .price-box h3 {
+    margin-top: 2px;
+    text-align: center;
+    color: black;
+  }
+  
+  .price-heading {
+    width:70%;
+    margin:5rem auto;
+    text-align:left;
+    padding-top: 2em;
+  }
+
+  .product-box:hover,
+  .product-box:focus {
+    color:rgb(12, 12, 12);
+    border-radius: 10px;    
+    box-shadow: 1px 3px 5px rgba(1, 1, 2, 0.479);    
+  }
+   
+
+  .border-trans {
+    background:
+      linear-gradient(var(--main-purple) 0 0) 100% 0,
+      linear-gradient(var(--main-purple) 0 0) 0 0,
+      linear-gradient(var(--main-purple) 0 0) 0 100%,
+      linear-gradient(var(--main-purple) 0 0) 100% 100%;
+    background-size: var(--d, 0) 3px, 3px var(--d, 0);
+    background-repeat:no-repeat;
+    transition: 0.5s;
+  }
+ 
+  .border-trans:hover {
+    --d: 100%;
+     
+    color:var(--main-purple);
+  }
+  
+ 
+  /* Contact section */
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0 2rem;
+    background: var(--main-gray);
+  }
+  
+  .contact-section-title > h2 {
+    font-size: 6rem;
+  }

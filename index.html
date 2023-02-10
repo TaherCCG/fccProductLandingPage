@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is my porfolio">
+        <meta name="description" content="My 1st attempt at building a site using HTML and CSS only">
+        <meta name="description" content="HTML CSS Portfolio Page">
+        <link rel="stylesheet" href="styles.css" >
+        <script src="https://kit.fontawesome.com/ed5d05b08e.js" crossorigin="anonymous"></script>
+        <title>Product Landing Page</title>
+    </head>
+    <body>
+
+        <header id="header">       
+            
+            <nav id="nav-bar" class="navbar">
+                <div class="nav">
+                <ul class="menu-list">
+                    <img src="https://yt3.ggpht.com/ytc/AKedOLQ6jDKfUiUpaMfp0tYzWYQO9ncjYJm0x9veDfU4jA=s900-c-k-c0x00ffffff-no-rj" alt="logo" id="header-img">
+                    <li><a class="nav-link border-trans" href="#features">Features</a></li>
+                    <li><a class="nav-link border-trans" href="#about">About</a></li>      
+                    <li><a class="nav-link border-trans" href="#prices">Pricing</a></li>
+                    <li><a class="nav-link border-trans" href="#contact">Contact</a></li>
+                </ul>
+                </div>
+            </nav>
+       </header>
+
+       <section class="features" id="features">
+        <!-- <div class="container"> -->
+            
+            <div class="box border-trans">
+                <div class="icon"><i class="fa-brands fa-playstation fa-5x"></i></div>
+                <div class="des">
+                    <h2>Feature 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam delectus commodi facilis eius nostrum nam repellendus nobis neque quisquam eveniet nesciunt, recusandae placeat amet a saepe, enim quasi provident doloremque.</p>
+                </div>
+            </div>
+
+            <div class="box border-trans">
+                <div class="icon"><i class="fa-solid fa-gamepad fa-5x"></i></div>
+                <div class="des">
+                    <h2>Feature 2</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente assumenda facilis quis necessitatibus dicta modi perferendis a illo saepe odit pariatur reprehenderit culpa, aperiam ipsa.</p>
+                </div>
+            </div>
+
+            <div class="box border-trans">
+                <div class="icon"><i class="fa-solid fa-thumbs-up fa-5x"></i></div>
+                <div class="des">
+                    <h2>Feature 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolor iusto sed eius quis voluptates?</p>
+                </div>
+            </div>
+   
+    </section>
+
+    <section class="about-me" id="about">       
+    
+        <img src="https://yt3.ggpht.com/ytc/AKedOLQ6jDKfUiUpaMfp0tYzWYQO9ncjYJm0x9veDfU4jA=s900-c-k-c0x00ffffff-no-rj" alt="logo" id="logo-img">
+        <h2 class="about-title">Chaos Crew Gaming</h2>
+        <p class="about-subtitle">Rusty old gamers from all over the world.</p>
+
+        <iframe id="video"
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/lOvDSe2Lcpo" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <div class="about-box">
+            <p>Above is gamplay of Chaso Crew gaming on GT Sports Playstion</p>
+            <br></br>
+            <ul>
+                <li><p>Editing was done on Adobe CC Suite</p></li>
+                <li><p>Team OZ CCG Full lobby</p></li>
+                <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque impedit alias hic quasi pariatur illo!</p></li>
+            </ul>
+        </div>       
+       
+     </section>
+
+     <section id="prices" class="price-section">
+        <div class="price-heading"><h1>Prices</h1>
+            <p>Choose from 1 of our monthly plans.  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id temporibus recusandae eligendi neque hic! Placeat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ad unde voluptas doloribus fugit officiis ullam animi, nulla quaerat error!</p>
+        </div>
+            <div class="product-box border-trans">
+            
+                <a class="price-box border-trans"  href="page1.html" >
+                    <!-- <a class="nav-link border-trans" href="./page1.html" ></a> -->
+                    <h2> Free</h2>
+                    <h3>£0 / month</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                </a>
+            
+                <a class="price-box border-trans" href="page1.html">
+                    <h2>Starter</h2>
+                    <h3>£1 / month</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </a>
+            
+                <a class="price-box border-trans" href="page1.html">
+                    <h2>Pro</h2>
+                    <h3>£5 / month</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </a>
+            </div>
+        </div>
+        </section>
+
+
+
+
+        <section class="contact-section" id="contact">
+            <div class="email-box"> 
+                <h5>Join our Community</h5>
+                <form id="form" target="_blank" action="https://www.freecodecamp.com/email-submit" >
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="enter your email" required>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+                <p>Enter your email above for weekly newslater!! </p>
+            </div>
+            <div class="contact-box">
+                <h2 class="contact-section-title">Lets Work together</h2>
+                <p>Devs.. Leave your feedback please.</p>
+            </div>
+            <div class="contact-links-box">
+                <a class="border-trans" href="https://github.com/Trigzi" id="profile-link" target="_blank" > GitHub </a>
+                <a class="border-trans" href="https://github.com/Trigzi" id="profile-link2" target="_blank" > CodePen </a>
+                <a class="border-trans" href="https://tahermahmood.dev" id="profile-link3" target="_blank" > Website </a>
+            </div>
+        </section>
+
+    </body>
+
+   
+
+</html>
+
+    
+
